@@ -19,6 +19,21 @@ h2 {
   color: #184f63;
 }
 
+/* Hero header */
+#hero {
+  /* light grey shows if the image doesn't load */
+  background-color: #dbdcde;
+  /* path starts from this CSS file's folder, so ../ goes up to assets */
+  background-image: url("../images/background.webp");
+  /* cover = image fills the whole area without stretching */
+  background-size: cover;
+  /* 50% across (centre), 70% down - shows the keyboard and earphones */
+  background-position: 50% 70%;
+  min-height: 500px;
+  /* 5% top and bottom, 7% left and right */
+  padding: 5% 7%;
+}
+
 /* About section */
 #about {
   background-color: white;
