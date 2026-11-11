@@ -19,6 +19,11 @@ h2 {
   color: #184f63;
 }
 
+.sharp-corners,
+.sharp-corners * {
+    border-radius: 0;
+}
+
 /* Hero header */
 #hero {
   /* light grey shows if the image doesn't load */
@@ -57,9 +62,17 @@ font-size: 1.2rem;
     min-height: 120px;
 }
 
+/* Media queries */
 
+/* Use Bootstrap breakpoint for XL screens */
+@media screen and (min-width: 1200px) {
+    /* Fixes all portfolio cards being too tall on xl screens */
+    #portfolio .card-text {
+        min-height: auto;
+    }    
 
 /* Contact section */
 #contact {
   background-color: white;
 }
+
